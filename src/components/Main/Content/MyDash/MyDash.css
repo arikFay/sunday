@@ -1,0 +1,92 @@
+.container{
+    text-align: right;
+    width: 100%;
+}
+
+.Mission{
+    font-size: 3.5rem ;
+    color: black ;
+    text-align: center;
+    margin: 0.5rem 0rem 3rem 0rem;
+
+}
+
+.Cards{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(5 , 1fr);
+    direction: rtl;
+}
+
+
+
+.CardPlus{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15vw;
+    height: 20vh;
+    right: 0;
+    margin:1rem;
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.CardPlus:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .plusIcon{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .Model{
+      
+      width: 80vw !important;
+      text-align: right;
+  }
+
+  .ant-modal-content{
+    height: 80vh ;
+  }
+
+  .ant-modal-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+}
+
+.ant-modal-title {
+    text-align: center;
+}
+
+.inputData{
+    
+    width: 30rem;
+    text-align: right;
+    margin: 1rem;
+}
+
+
+.InputArea{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+
+.Notes{
+    width: 90% ;
+}
+

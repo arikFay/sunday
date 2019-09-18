@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "status": "בוצע",
+      "name": "אריק פיגנבלט",
+      "network": "נהר איתן",
+      "madorim": {
+          "mador1": "נוצ",
+          "mador2": "תמסורת"
+      },
+      "sitenumber": "360",
+      "namesite": "פלוגות"
+    },
+    {
+        "id": 2,
+        "status": "בוצע",
+        "name": "אריק פיגנבלט",
+        "network": "מבצעית",
+        "madorim": {
+            "mador1": "נוצ",
+            "mador2": "ורד הרים"
+        },
+        "sitenumber": "550",
+        "namesite": "ראש הנקרה"
+      }
+     
+  ]

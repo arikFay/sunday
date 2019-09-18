@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "אריק פיגנבלט",
+      "username": "arik",
+      "password": "123456",
+      "phone": "050-230-3309",
+      "company": {
+        "mador": "notz",
+        "role": "רשצ צוות אפליקטבי",
+        "admin": true
+      }
+    },
+    {
+        "id": 2,
+        "name": "אתי זיידה",
+        "username": "eti",
+        "password": "123456",
+        "phone": "050-550-6677",
+        "company": {
+          "mador": "binyan_cohah",
+          "role": "אחרית אינטגרטורים",
+          "admin": true
+        }
+      },
+      {
+        "id": 3,
+        "name": "מאור רבוח",
+        "username": "maor",
+        "password": "123456",
+        "phone": "050-550-6477",
+        "company": {
+          "mador": "timsoret",
+          "role": "לא עושה כלום",
+          "admin": false
+        }
+      },
+      {
+        "id": 4,
+        "name": "אמיר פולנצקי",
+        "username": "maor",
+        "password": "123456",
+        "phone": "050-550-3477",
+        "company": {
+          "mador": "verd_harim",
+          "role": "לא עושה כלום",
+          "admin": false
+        }
+      }
+   
+  ]

@@ -1,0 +1,60 @@
+.Login{
+    background: linear-gradient(to bottom right, rgba(56, 53, 53, 0.493), rgba(51, 51, 38, 0.288)) ,url('../../img/background-login.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.LoginPanel{
+    position: absolute;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25rem;
+    width: 35rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.LoginPanel .input{
+    width: 30rem !important;
+    height: 2rem !important;
+    margin: 2rem auto !important;
+    text-align: right !important;
+    
+}
+
+.LoginPanel .icon{
+    margin-top: 1rem !important;
+}
+
+.LoginPanel .anticon{
+    margin-top: 1rem !important;   
+}
+
+.ant-btn-primary{
+    width: 80px !important ;
+    height: 3rem ;
+    margin: 2rem auto ;
+    /* font-size: 4rem; */
+    
+}
+
+.submit{
+    font-size: 1.5rem;
+}
+
+img{
+    height: 2.2rem;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0.3rem;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}

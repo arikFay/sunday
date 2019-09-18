@@ -1,0 +1,163 @@
+.SharedDasd{
+    text-align: right;
+    margin: 0;
+}
+
+.header{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: rgba(35, 35, 36, 0.712);
+    margin-right: 2.6rem;
+}
+
+.Tasks{
+    margin: 1rem auto;
+    height: 82vh;
+    height: 78vh;
+    width: 100%;
+    border: 1px solid rgba(66, 64, 64, 0.336); 
+
+}
+
+.ReactTable{
+    height: 100%;
+}
+
+.rt-resizable-header-content{
+    font-size: 1.2rem;
+}
+
+.table{
+    text-align: right;
+    background-color: rgba(254, 254, 255, 0.555);
+}
+
+.ant-btn{
+    width: 6rem;
+}
+
+.ant-btn-dashed{
+    background-color: rgba(97, 186, 245, 0.726) !important;
+}
+
+/* .detail{
+    background-color: rgba(19, 231, 143, 0.582) !important;
+} */
+
+.popUp{
+    height: 60rem ;
+    width: 70rem;
+    
+}
+
+.details{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: rgba(36, 35, 35, 0.712);
+    margin-right: 2.6rem;  
+}
+
+.closeBtn{
+    position: absolute !important;
+    padding-top: 0.1px !important;
+    line-height: 30px !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.rt-td{
+    font-size: 1.2rem;
+}
+
+.Done{
+    background-color: #00C875;
+    margin: 0.2rem auto;
+    padding: 0.2rem;
+    height: 100%;
+
+    text-align: center;
+}
+
+.wait{
+    background-color: #E2445C;
+    margin: 0.2rem auto;
+    padding: 0.2rem;
+    height: 100%;
+    text-align: center;
+}
+
+.inProgress{
+    background-color: #FFCB00;
+    margin: 0.2rem auto;
+    padding: 0.2rem;
+    height: 100%;
+    text-align: center;
+
+}
+
+
+.state{
+    text-align: center;
+    height: 100%;
+}
+
+.statusSpan{
+    margin: auto 0;
+}
+
+.Steps{
+    width: 80%;
+    
+    
+}
+
+th{
+    height: 50px;
+}
+
+.rt-resizable-header-content{
+    font-size: 2.5rem;
+}
+
+
+
+.columnStyle{
+    font-size: 1.5rem;
+}
+
+td{
+   font-size: 1.4rem; 
+}
+
+.col-md-6{
+    text-align: left;
+}
+
+.imgStatus{
+    height: 30px;
+    margin: 0.4rem;
+}
+
+
+.success{
+    border: 5px solid #00b461;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #00C875;
+    column-fill: auto;
+}
+
+.btnInfo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
+.btn-group{
+    position: absolute;
+    display: flex;
+    left: 10;
+
+}
+

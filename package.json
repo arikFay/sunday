@@ -1,0 +1,60 @@
+{
+  "name": "sunday-redux",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.4.1",
+    "@o2xp/react-datatable": "^1.1.9",
+    "@syncfusion/ej2-react-grids": "^17.2.49",
+    "ag-grid-community": "^21.2.0",
+    "ag-grid-react": "^21.2.0",
+    "antd": "^3.22.0",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-table": "^1.15.4",
+    "chroma-js": "^2.0.6",
+    "material-table": "^1.50.0",
+    "react": "^16.9.0",
+    "react-awesome-modal": "^2.0.5",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-bootstrap-sweetalert": "^4.4.1",
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-select": "^3.0.4",
+    "react-table": "^6.10.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.2.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert-react": "^0.4.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
+  }
+}
