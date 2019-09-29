@@ -1,5 +1,25 @@
-.editable-row .ant-form-explain {
-    position: absolute;
-    font-size: 12px;
-    margin-top: -4px;
-  }
+.CalendarMission{
+  height: 100%;
+  width: 100%;
+  font-size: 0.5rem;
+}
+
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.notes-month {
+  text-align: center;
+  font-size: 28px;
+}
+.notes-month section {
+  font-size: 28px;
+}

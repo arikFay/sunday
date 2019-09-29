@@ -7,7 +7,7 @@ class BTN extends Component {
         return (
             <div>
                 <div className='myWeek btn-menu'>
-                    <span className='span'>{this.props.description}</span>   
+                    <span className='span' onClick={() => this.props.onClick}>{this.props.description}</span>   
                 </div>
 
             </div>

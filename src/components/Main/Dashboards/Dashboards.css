@@ -94,9 +94,8 @@ font-family: 'Kalam', cursive; */
 }
 
 .loginDetail {
-    position: absolute;
-    bottom: 5rem;
-    left: 5rem;
+    margin: 3px;
+    font-size: 1.5rem;
 }
 
 .onlineUsers{

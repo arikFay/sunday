@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Clock from 'react-live-clock';
+
 import './Dashboards.css';
 import BTN from './BTN/BTN';
 import {  Link } from "react-router-dom";
 
 import { connect } from 'react-redux';
 import { changeHandlerSideMenu } from '../../../store/actions/Dashboards';
-
+import { ToogleInfoModel } from '../../../store/actions/Models/';
+let time = new Date().toLocaleString();
 
 
 class Dashboards extends Component  {
@@ -49,7 +52,7 @@ render(){
             <div className="modal-form">
               <span className="close-btn" onClick={() =>  this.props.openSideMenu(false)}></span>
             </div>
-            <Link to='/main/explanation'><BTN description='הסבר'/></Link>
+            <a onClick={this.props.ToogleInfoModelHandler}><BTN  description='הסבר'/></a>
             <Link to='/main/myDash'><BTN description='המשימות שלי'/></Link>
             <Link to='/main/myWeek'><BTN description='לו"ז משימות'/></Link>
             <Link to='/main'><BTN description='לו"ז משימות משותף'/></Link>
@@ -64,8 +67,9 @@ render(){
               </ul>
             </div>
             <div className='loginDetail'>
-                <h6 className='userLogin'>{userLogin.fullName}</h6>
-                <h6 className='userLogin'>{userLogin.madorName}</h6>
+                {/* <h6 className='userLogin'>{userLogin.fullName}</h6>
+                <h6 className='userLogin'>{userLogin.madorName}</h6> */}
+                {time}
             </div>
           </div> : null}
       </div>
@@ -83,6 +87,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
       openSideMenu : () => dispatch(changeHandlerSideMenu(false)),
+      ToogleInfoModelHandler: () => dispatch(ToogleInfoModel())
   }
 }
 

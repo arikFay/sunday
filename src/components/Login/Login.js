@@ -56,9 +56,7 @@ const Login = (props) => {
                   <span className='submit'>התחבר</span>
                 </Button> 
                 
-
-  
-                    
+ 
                 </div>
                 <p className='copyright'>AppTeam פותח ע"י צוות &#169;</p>
 

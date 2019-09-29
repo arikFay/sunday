@@ -7,6 +7,7 @@ import General from './General';
 import Dashboards from './Dashboards';
 import dataDashboards from './dataDashboards';
 import MyDashboards from './MyDashboards';
+import Models from './Models';
 // import main from './main';
 
 export default combineReducers({
@@ -14,6 +15,7 @@ export default combineReducers({
     Dashboards,
     dataDashboards,
     General,
-    MyDashboards
+    MyDashboards,
+    Models
     // main
 })

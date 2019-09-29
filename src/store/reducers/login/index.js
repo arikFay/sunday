@@ -1,6 +1,6 @@
 // ===== Login Reducer ====== // 
 // Relevant Constants
-import { LOGIN_INPUT_CHANGE, USER_AUTHENTICATED } from '../../actions/login/constants';
+import { LOGIN_INPUT_CHANGE, USER_AUTHENTICATED, USER_DISCONNECT } from '../../actions/login/constants';
 import io from 'socket.io-client';
 // Initial State
 const initState = {
@@ -42,6 +42,19 @@ export default ( state = initState, { type, payload }) => {
                 madorName : payload.teamname,
                 fullName : payload.userfullname,
                 role: payload.role,
+                loginForm: Object.assign({}, {
+                    username : '',
+                    password : ''
+                })
+            }
+        case USER_DISCONNECT:
+            return{
+                ...state,
+                isLogged : false,
+                userID : '',
+                madorName : '',
+                fullName : '',
+                role: '',
                 loginForm: Object.assign({}, {
                     username : '',
                     password : ''

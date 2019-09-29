@@ -6,7 +6,7 @@ import { PREFIX } from '../general';
 // sweetalert
 import swal from 'sweetalert';
 // Constants relared to login
-import { LOGIN_INPUT_CHANGE, USER_AUTHENTICATED } from './constants';
+import { LOGIN_INPUT_CHANGE, USER_AUTHENTICATED, USER_DISCONNECT } from './constants';
 import { timeout } from 'q';
 // import { UPDATE_CATEGORIES } from '../sidenav/constants';
 
@@ -16,11 +16,7 @@ export const loginInputChange = (e) => {
 }
 
 
-// componentDidMount(){
-//     // this.setState({posts: data})
-//     this.state.socket.on("output",data => this.setState({data: data}));
-//     this.state.socket.on("output1",data1 => this.setState({data1: data1}));
-//   }
+
 
 // --- Authenticate user agains DB.
 // -- update isLogged to true
@@ -33,6 +29,9 @@ export const authenticateUser = (username, password, socket) => {
             console.log(res);
             if(res.success == true){
                 dispatch({ type: USER_AUTHENTICATED, payload : res });
+                socket.on('disconnect', function(){
+                    dispatch({ type: USER_DISCONNECT });
+                    });
             }else {             
             swal({
                 title: "שגיאה בהתחברות",
@@ -42,25 +41,5 @@ export const authenticateUser = (username, password, socket) => {
             }  
         })
 
-
-
-        // axios.post(PREFIX + 'login', { username, password })
-        //     .then((res) => {
-        //         // --- Change User to logged.
-        //         dispatch({ type: USER_AUTHENTICATED, payload : res.data.id });
-
-        //         // --- recieving user related categories by its ID.
-        //         axios.post(PREFIX + 'system/category_list', { userID : res.data.id})
-        //             .then((res) => {
-        //                 // dispatch({type : UPDATE_CATEGORIES, payload : res.data});
-        //             })
-        //             .catch((err) => {
-        //                 console.log('error recieving the categories.');
-        //             })
-        //     })
-        //     // --- error in authentication
-        //     .catch((err) => {
-   
-        //     })
     }
 }

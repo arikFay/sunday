@@ -4,7 +4,7 @@ import './SharedDasd.css';
 import "react-table/react-table.css";
 
       //------antd------//
-import {  Icon, Modal, Button } from 'antd';
+import {  Icon, Modal, Button, Tag } from 'antd';
 
      //-----import status img-----//
 import successImg from '../../../../img/checked.png';
@@ -383,7 +383,6 @@ class SharedDash extends Component  {
     
     
     <div className='SharedDasd'>
-
     <h1 className='header'>לוח פעילות משותף</h1>
     <div class="btn-group btn-group-sm" role="group">
       <button type="button" class="btn btn-success react-bs-table-csv-btn  hidden-print">
@@ -424,6 +423,8 @@ class SharedDash extends Component  {
           headerStyle={ { fontSize: '2rem' } }
           bodyStyle={ { fontSize: '2rem' } }
             >
+                {console.log('data', this.props.sharedash.data)}
+
 
           <TableHeaderColumn 
           // width='70' 
@@ -496,7 +497,7 @@ class SharedDash extends Component  {
           <TableHeaderColumn 
           // width='90' 
           className='columnStyle' 
-          dataField='contact' 
+          dataField='creator' 
           editable={ this.props.login.role == "admin" ? { validator: validatorText } : false }
           dataAlign='right'>
             איש קשר
@@ -516,7 +517,7 @@ class SharedDash extends Component  {
           <TableHeaderColumn  
           width='170'
           className='columnStyle'
-          dataField='datetime' 
+          dataField='date' 
           editable={ this.props.login.role == "admin" ? { type: 'date' } : false }
           dataAlign='right'>
           תאריך
@@ -534,20 +535,24 @@ class SharedDash extends Component  {
         
  </BootstrapTable>
         <Modal
-          title="Basic Modal"
+          title="מדורים משתתפים"
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          <Select
-            closeMenuOnSelect={false}
-            value={selectedOptions}
-            onChange={this.handleChange}
-            // defaultValue={}
-            isMulti
-            options={this.props.sharedash.madors}
-            styles={colourStyles}
-           />
+        <div className='teamsTag'>
+          {this.props.sharedash.data.teams}
+          {console.log('teams',this.props.sharedash.data.teams)}
+          {console.log('first',this.props.sharedash.data[1])}
+          {this.props.sharedash.data.map((number) => 
+            console.log(number))}
+          <Tag color="green">נו"צ</Tag>
+          <Tag color="blue">תמסורת</Tag>
+          <Tag color="volcano">תשתיות</Tag>
+
+
+
+        </div>
         </Modal>
 
       

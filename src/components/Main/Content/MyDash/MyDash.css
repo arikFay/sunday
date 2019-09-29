@@ -90,3 +90,53 @@
     width: 90% ;
 }
 
+
+
+.MadorArea{
+    height: 65vh;
+    width: 100%;
+    /*  */
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+.MadorArea::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .MadorArea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .MadorArea::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .MadorArea::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+  .InputMadorData{
+    direction: rtl;
+    height: 23vh;
+    width: 90%;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.452);
+    padding: 1.5rem;
+}
+
+.inputMadorArea{
+    direction: rtl;
+}
+
+.checkBoxArea{
+    margin: 1rem;
+}

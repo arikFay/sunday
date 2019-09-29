@@ -14,12 +14,13 @@ import MyWeek from './MyWeek/MyWeek';
 
 import { connect } from 'react-redux';
 import { changeHandlerSideMenu } from '../../../store/actions/Dashboards';
-
+import InfoModal from '../../Models/Info/info';
 
 const Content = (props) => {
     // const { visible } = props.sidenav.visible;
     const login = props.login;
         return (
+        <div>
         <div className={props.sidenav.visible ? 'Content' : 'ContentFull'}>
         <nav className="navbar">
         {props.sidenav.visible ? null :
@@ -37,6 +38,8 @@ const Content = (props) => {
                 <Route  path='/main/explanation' component={explanation}/>
             </Switch>
         </div>
+        <InfoModal/>
+       </div>
         );
     }
 
