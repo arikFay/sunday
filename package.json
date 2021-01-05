@@ -10,7 +10,7 @@
     "ag-grid-community": "^21.2.0",
     "ag-grid-react": "^21.2.0",
     "antd": "^3.22.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "bootstrap-table": "^1.15.4",
     "chroma-js": "^2.0.6",
